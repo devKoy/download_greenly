@@ -1,0 +1,85 @@
+#isMobileApp {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background: white;
+    z-index: 99999;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   overflow-x: scroll;
+}
+
+#isMobileApp div.image .imgcontainer{
+   display: grid;
+   place-items: center;
+   grid-template-columns: auto;
+   background: white;
+   box-shadow: inset 0 4px 44px 30px rgba(255,255,255,0.2);
+   
+}
+
+#isMobileApp div.image {
+   display: grid;
+   place-items: center;
+   grid-template-columns: auto;
+   animation: slideUpAnim 800ms ease-in-out forwards;
+}
+
+#isMobileApp img{
+   width: 80%;
+   height: max-content;
+   
+}
+
+#isMobileApp div.image div {
+   padding: 10px;
+}
+
+#isMobileApp div.image div h1{
+   font-size: 1.1em;
+   font-weight: 900;
+   margin: 0;
+}
+
+#isMobileApp div.image div p{
+   font-size: .8em;
+   font-weight: 900;
+}
+
+#isMobileApp #downloadBody{
+    position: relative;
+    padding: 20px;
+   scroll-behavior: smooth;
+}
+
+#isMobileApp button.download{
+    border: none;
+    padding: 10px 15px;
+    background: #24a0ed 
+}
+
+#isMobileApp button.download{
+    border: none;
+    padding: 10px 15px;
+    background: #24a0ed 
+}
+@keyframes slideUpAnim {
+   from {
+      opacity: 0;
+      transform: translateY(100%);
+   }to{
+      opacity: 1;
+      transform: translateY(0);
+   }
+}
+
+@keyframes slideLeftAnim {
+   from {
+      opacity: 0;
+      transform: translateX(-100%);
+   }to{
+      opacity: 1;
+      transform: translateX(0);
+   }
+}
