@@ -2,39 +2,726 @@
 <html lang="en">
 
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-        <link rel="stylesheet" href="styles/download.css">
-        <title>Download Greenly</title>
+  <title>Greenly - Android Download</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <link href="assets/css/style.css" rel="stylesheet">
 </head>
 
-<body onload="alert()">
+<body>
 
-    <section id="isMobileApp">
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="container d-flex align-items-center justify-content-between">
+      <div class="logo">
+        <h1><a href="index.html">Greenly<span>🌱</span></a></h1>
+      </div>
 
-        
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto" href="#contact">Help</a></li>
+          <li><a class="nav-link scrollto" href="#team">Team</a></li>
+          <li><a onclick="this.innerHTML = 'Downloading...'" class="getstarted scrollto" href="https://drive.google.com/uc?export=download&id=1OHVzDrljyWKOdUiagwRbjFHwUB29xiYb&confirm=t&uuid=11357d1b-30f6-4e0b-8c83-4e2db8513e96&at=ALAFpqzA4U5h6_sl7O-oOELx35_6:1667480219093">Download App</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
 
-        <div id="downloadBody" >
-            <div class="image">
-                <div class="imgcontainer">
-                    <img loading="lazy" src="https://i.ibb.co/12fvfwz/phone-Model.webp" alt="">
+    </div>
+  </header><!-- End Header -->
 
-                </div>
-                <div class="title">
-                    <h1>Title Test</h1>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos excepturi praesentium explicabo vel consequuntur quasi mollitia cum. Dolores in dicta ratione velit perferendis perspiciatis amet ut, dolor id harum natus?</p>
-                </div>
+  <section id="hero">
+
+    <div class="container">
+      <div class="row d-flex align-items-center"">
+      <div class=" col-lg-6 py-5 py-lg-0 order-2 order-lg-1" data-aos="fade-right">
+        <h1>Greenly's Android Companion is here!</h1>
+        <h2>Greenly is now available on Android, install it now for better experiences.</h2>
+        <a href="https://drive.google.com/uc?export=download&id=1OHVzDrljyWKOdUiagwRbjFHwUB29xiYb&confirm=t&uuid=11357d1b-30f6-4e0b-8c83-4e2db8513e96&at=ALAFpqzA4U5h6_sl7O-oOELx35_6:1667480219093" class="btn-get-started scrollto" download>Download Now (21 MB)</a>
+
+      </div>
+      <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="fade-left">
+        <img src="assets/img/landiing.webp" class="img-fluid" alt="" style="height: 540px; padding: 50px 0;  width: 100% !important; object-fit: contain;">
+      </div>
+    </div>
+    </div>
+
+  </section>
+
+  <main id="main">
+
+    <!-- ======= Clients Section ======= -->
+    <section id="clients" class="clients section-bg">
+      <div class="container">
+        <div style="margin-top: 5vh;" class="section-title">
+          <h2 data-aos="fade-in">Tools</h2>
+          <p data-aos="fade-in">These following technologies are used to create Greenly</p>
+        </div>
+        <div class="row no-gutters clients-wrap clearfix wow fadeInUp">
+          <div class="col-lg-2 col-md-4 col-6">
+            <div class="client-logo">
+              <img src="data:image/png;base64,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" class="img-fluid" alt="" data-aos="flip-right">
             </div>
-            <button class="download">
-                <a href="https://drive.google.com/uc?export=download&id=1av6nrR_qmEVKDySOPE5Ih5Stq93d8IZl&confirm=t&uuid=f000a8ae-9eae-44b3-bd17-0ab8ce73cc82&at=ALAFpqzCXtJT72Mys_EECC3o5ULl:1666673773242" download>
-                    Download App
-                </a>
-                <i class="fa fa-cloud-download"></i>
-            </button>
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6">
+            <div class="client-logo">
+              <img src="data:image/png;base64,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" class="img-fluid" alt="" data-aos="flip-right" data-aos-delay="100">
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6">
+            <div class="client-logo">
+              <img src="https://bigdatacourse.appspot.com/assets/img/slider/python.jpg" class="img-fluid" alt="" data-aos="flip-right" data-aos-delay="200">
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6">
+            <div class="client-logo">
+              <img src="https://1000logos.net/wp-content/uploads/2020/09/Java-Logo.png" class="img-fluid" alt="" data-aos="flip-right" data-aos-delay="300">
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6">
+            <div class="client-logo">
+              <img src="https://p92.hu/binaries/content/gallery/p92website/technologies/htmlcssjs-details.png" class="img-fluid" alt="" data-aos="flip-right" data-aos-delay="400">
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6">
+            <div class="client-logo">
+              <img src="https://keras.io/img/logo.png" class="img-fluid" alt="" data-aos="flip-right" data-aos-delay="500">
+            </div>
+          </div>
+
         </div>
 
-    </section>
+      </div>
+    </section><!-- End Clients Section -->
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about section-bg">
+      <div class="container">
+
+        <div class="row gy-4">
+          <div class="image col-xl-5"></div>
+          <div class="col-xl-7">
+            <div class="content d-flex flex-column justify-content-center ps-0 ps-xl-4">
+              <h3 data-aos="fade-in" data-aos-delay="100">Your friendly AI is Here</h3>
+              <p data-aos="fade-in">
+                Greenly is now more accessible than ever before. Download and install the App to give your plants the care they deserve.
+              </p>
+              <div class="row gy-4 mt-3">
+                <div class="col-md-6 icon-box" data-aos="fade-up">
+                  <i class="bx bx-scan"></i>
+                  <h4><a href="#">Scan Plant Diseases</a></h4>
+                  <p>Start Scanning your plant's disease by using the AI trained to identify leaf diseases cause by Fungi and Bacterial</p>
+                </div>
+                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
+                  <i class='bx bx-bell' ></i>
+                  <h4><a href="#">Be Updated</a></h4>
+                  <p>Getting Push Notifications from the community and to your answers/comments and discussions</p>
+                </div>
+                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
+                  <i class="bx bx-chat"></i>
+                  <h4><a href="#">Growing Community</a></h4>
+                  <p>Do you have more questions? Share your Ideas and Questions regarding to your plant's health on our Community</p>
+                </div>
+                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
+                  <i class="bx bx-map"></i>
+                  <h4><a href="#">Geographic Data</a></h4>
+                  <p>View the different Plant's and Diseases located in the different are of Camarines Sur</p>
+                </div>
+              </div>
+            </div><!-- End .content-->
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Services Section ======= -->
+    <!-- <section id="services" class="services section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2 data-aos="fade-in">Services</h2>
+          <p data-aos="fade-in">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 d-flex" data-aos="fade-right">
+            <div class="card">
+              <div class="card-img">
+                <img src="assets/img/services-1.jpg" alt="...">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title"><a href="">Temporibus laudantium</a></h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+                <div class="read-more"><a href="#"><i class="bi bi-arrow-right"></i> Read More</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 d-flex" data-aos="fade-left">
+            <div class="card">
+              <div class="card-img">
+                <img src="assets/img/services-2.jpg" alt="...">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title"><a href="">Aperiores voluptates</a></h5>
+                <p class="card-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo</p>
+                <div class="read-more"><a href="#"><i class="bi bi-arrow-right"></i> Read More</a></div>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-6 d-flex" data-aos="fade-right">
+            <div class="card">
+              <div class="card-img">
+                <img src="assets/img/services-3.jpg" alt="...">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title"><a href="">Veritatis natus nisi</a></h5>
+                <p class="card-text">Nemo enim ipsam voluptatem quia voluptas sit aut odit aut fugit, sed quia magni dolores eos qui ratione voluptatem sequi nesciunt Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet</p>
+                <div class="read-more"><a href="#"><i class="bi bi-arrow-right"></i> Read More</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 d-flex" data-aos="fade-left">
+            <div class="card">
+              <div class="card-img">
+                <img src="assets/img/services-4.jpg" alt="...">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title"><a href="">Aliquam veritatis</a></h5>
+                <p class="card-text">Nostrum eum sed et autem dolorum perspiciatis. Magni porro quisquam laudantium voluptatem. In molestiae earum ab sit esse voluptatem. Eos ipsam cumque ipsum officiis qui nihil aut incidunt aut</p>
+                <div class="read-more"><a href="#"><i class="bi bi-arrow-right"></i> Read More</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>End Services Section -->
+
+    <!-- ======= Features Section ======= -->
+    <!-- <section id="features" class="features section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2 data-aos="fade-in">Features</h2>
+          <p data-aos="fade-in">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+
+        <div class="row content">
+          <div class="col-md-5" data-aos="fade-right">
+            <img src="assets/img/features-1.svg" class="img-fluid" alt="">
+          </div>
+          <div class="col-md-7 pt-4" data-aos="fade-left">
+            <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
+            <p class="fst-italic">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+              magna aliqua.
+            </p>
+            <ul>
+              <li><i class="bi bi-check"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+              <li><i class="bi bi-check"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row content">
+          <div class="col-md-5 order-1 order-md-2" data-aos="fade-left">
+            <img src="assets/img/features-2.svg" class="img-fluid" alt="">
+          </div>
+          <div class="col-md-7 pt-5 order-2 order-md-1" data-aos="fade-right">
+            <h3>Corporis temporibus maiores provident</h3>
+            <p class="fst-italic">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+              magna aliqua.
+            </p>
+            <p>
+              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+              culpa qui officia deserunt mollit anim id est laborum
+            </p>
+          </div>
+        </div>
+
+        <div class="row content">
+          <div class="col-md-5" data-aos="fade-right">
+            <img src="assets/img/features-3.svg" class="img-fluid" alt="">
+          </div>
+          <div class="col-md-7 pt-5" data-aos="fade-left">
+            <h3>Sunt consequatur ad ut est nulla consectetur reiciendis animi voluptas</h3>
+            <p>Cupiditate placeat cupiditate placeat est ipsam culpa. Delectus quia minima quod. Sunt saepe odit aut quia voluptatem hic voluptas dolor doloremque.</p>
+            <ul>
+              <li><i class="bi bi-check"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+              <li><i class="bi bi-check"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+              <li><i class="bi bi-check"></i> Facilis ut et voluptatem aperiam. Autem soluta ad fugiat.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row content">
+          <div class="col-md-5 order-1 order-md-2" data-aos="fade-left">
+            <img src="assets/img/features-4.svg" class="img-fluid" alt="">
+          </div>
+          <div class="col-md-7 pt-5 order-2 order-md-1" data-aos="fade-right">
+            <h3>Quas et necessitatibus eaque impedit ipsum animi consequatur incidunt in</h3>
+            <p class="fst-italic">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+              magna aliqua.
+            </p>
+            <p>
+              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+              culpa qui officia deserunt mollit anim id est laborum
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section> -->
+    <!-- End Features Section -->
+
+    <!-- ======= Portfolio Section ======= -->
+    <!-- <section id="portfolio" class="portfolio section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2 data-aos="fade-in">Portfolio</h2>
+          <p data-aos="fade-in">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-12">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-app">App</li>
+              <li data-filter=".filter-card">Card</li>
+              <li data-filter=".filter-web">Web</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container" data-aos="fade-up">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bi bi-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
+              </div>
+              <div class="portfolio-info">
+                <h4>App 1</h4>
+                <p>App</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bi bi-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
+              </div>
+              <div class="portfolio-info">
+                <h4>Web 3</h4>
+                <p>Web</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bi bi-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
+              </div>
+              <div class="portfolio-info">
+                <h4>App 2</h4>
+                <p>App</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bi bi-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
+              </div>
+              <div class="portfolio-info">
+                <h4>Card 2</h4>
+                <p>Card</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 2"><i class="bi bi-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
+              </div>
+              <div class="portfolio-info">
+                <h4>Web 2</h4>
+                <p>Web</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 3"><i class="bi bi-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
+              </div>
+              <div class="portfolio-info">
+                <h4>App 3</h4>
+                <p>App</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 1"><i class="bi bi-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
+              </div>
+              <div class="portfolio-info">
+                <h4>Card 1</h4>
+                <p>Card</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 3"><i class="bi bi-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
+              </div>
+              <div class="portfolio-info">
+                <h4>Card 3</h4>
+                <p>Card</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bi bi-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
+              </div>
+              <div class="portfolio-info">
+                <h4>Web 3</h4>
+                <p>Web</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section> -->
+    <!-- End Portfolio Section -->
+
+    <!-- ======= Team Section ======= -->
+    <!-- <section id="team" class="team section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2 data-aos="fade-in">Team</h2>
+          <p data-aos="fade-in">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="member" data-aos="fade-up">
+              <div class="pic"><img src="assets/img/team/team-1.jpg" alt=""></div>
+              <h4>Walter White</h4>
+              <span>Chief Executive Officer</span>
+              <div class="social">
+                <a href=""><i class="bi bi-twitter"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="member" data-aos="fade-up" data-aos-delay="100">
+              <div class="pic"><img src="assets/img/team/team-2.jpg" alt=""></div>
+              <h4>Sarah Jhinson</h4>
+              <span>Product Manager</span>
+              <div class="social">
+                <a href=""><i class="bi bi-twitter"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="member" data-aos="fade-up" data-aos-delay="200">
+              <div class="pic"><img src="assets/img/team/team-3.jpg" alt=""></div>
+              <h4>William Anderson</h4>
+              <span>CTO</span>
+              <div class="social">
+                <a href=""><i class="bi bi-twitter"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="member" data-aos="fade-up" data-aos-delay="300">
+              <div class="pic"><img src="assets/img/team/team-4.jpg" alt=""></div>
+              <h4>Amanda Jepson</h4>
+              <span>Accountant</span>
+              <div class="social">
+                <a href=""><i class="bi bi-twitter"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section> -->
+    <!-- End Team Section -->
+
+
+    <!-- ======= Frequently Asked Questions Section ======= -->
+    <!-- <section id="faq" class="faq section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2 data-aos="fade-in">Frequently Asked Questions</h2>
+          <p data-aos="fade-in">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+
+        <div class="row faq-item d-flex align-items-stretch" data-aos="fade-up">
+          <div class="col-lg-5">
+            <i class="bx bx-help-circle"></i>
+            <h4>Non consectetur a erat nam at lectus urna duis?</h4>
+          </div>
+          <div class="col-lg-7">
+            <p>
+              Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+            </p>
+          </div>
+        </div>
+
+        <div class="row faq-item d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-5">
+            <i class="bx bx-help-circle"></i>
+            <h4>Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque?</h4>
+          </div>
+          <div class="col-lg-7">
+            <p>
+              Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim.
+            </p>
+          </div>
+        </div>
+
+        <div class="row faq-item d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-lg-5">
+            <i class="bx bx-help-circle"></i>
+            <h4>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi?</h4>
+          </div>
+          <div class="col-lg-7">
+            <p>
+              Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus.
+            </p>
+          </div>
+        </div>
+
+        <div class="row faq-item d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
+          <div class="col-lg-5">
+            <i class="bx bx-help-circle"></i>
+            <h4>Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla?</h4>
+          </div>
+          <div class="col-lg-7">
+            <p>
+              Aperiam itaque sit optio et deleniti eos nihil quidem cumque. Voluptas dolorum accusantium sunt sit enim. Provident consequuntur quam aut reiciendis qui rerum dolorem sit odio. Repellat assumenda soluta sunt pariatur error doloribus fuga.
+            </p>
+          </div>
+        </div>
+
+        <div class="row faq-item d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
+          <div class="col-lg-5">
+            <i class="bx bx-help-circle"></i>
+            <h4>Tempus quam pellentesque nec nam aliquam sem et tortor consequat?</h4>
+          </div>
+          <div class="col-lg-7">
+            <p>
+              Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section> -->
+    <!-- End Frequently Asked Questions Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <!-- <section id="contact" class="contact section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Contact</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-6">
+
+            <div class="row">
+              <div class="col-md-12">
+                <div class="info-box" data-aos="fade-up">
+                  <i class="bx bx-map"></i>
+                  <h3>Our Address</h3>
+                  <p>A108 Adam Street, New York, NY 535022</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="info-box mt-4" data-aos="fade-up" data-aos-delay="100">
+                  <i class="bx bx-envelope"></i>
+                  <h3>Email Us</h3>
+                  <p>info@example.com<br>contact@example.com</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="info-box mt-4" data-aos="fade-up" data-aos-delay="100">
+                  <i class="bx bx-phone-call"></i>
+                  <h3>Call Us</h3>
+                  <p>+1 5589 55488 55<br>+1 6678 254445 41</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-lg-6 mt-4 mt-lg-0">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form w-100" data-aos="fade-up">
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+              </div>
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section> -->
+    <!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="footer-top">
+
+      <div class="container">
+
+        <div class="row  justify-content-center">
+          <div class="col-lg-6">
+            <h3>Greenly</h3>
+            <p>Your Companion towards keeping the best out of your plant's Health</p>
+          </div>
+        </div>
+
+      
+
+        <div class="social-links">
+          <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+          <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+          <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+          <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+          <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container footer-bottom clearfix">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Greenly</span> 2022</strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+      
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <script src="assets/js/main.js"></script>
+
 </body>
 
 </html>
